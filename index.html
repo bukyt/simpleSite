@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4b6cb7, #182848); /* Blueish gradient */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to My Site</h1>
+        <p>It is developed and maintained by github.com/bukyt</p>
+        <p>New features will be added later</p>
+        <div id="dynamicText"></div>
+    </div>
+
+    <script>
+        // JavaScript to add dynamic text
+        document.addEventListener("DOMContentLoaded", function () {
+            var dynamicText = document.getElementById("dynamicText");
+            dynamicText.innerHTML = "<p>Might add a way to register to my servers later</p>";
+        });
+    </script>
+</body>
+</html>
